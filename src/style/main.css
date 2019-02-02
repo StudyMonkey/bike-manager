@@ -1,0 +1,161 @@
+html,body{position: relative;height: 100%;}
+ul,li{list-style: none;margin:0;padding: 0;}
+.ofl{overflow: hidden;}
+a{text-decoration: none;}
+.g-head {width: 100%;height: auto;position: fixed;transition: all ease .3s;z-index: 99;transition-property: padding, background;background: #fff;padding-top: 0px;margin: 0 auto;}
+.m-headContent{text-align: center;margin: 0 auto;height: 80px;position: relative;/*width:110%;margin-left: -15px;*/}
+#logo{position: absolute;top:18px;left:30px;}
+#logo img{width: 120px;height: 78px;display: block;float: left;}
+.companyName{width:200px;height:31px;background:url(../img/companyName.png) no-repeat;float: left;margin-top: 20px;}
+.g-head ul.m-nav {float: right;transition: all 0.4s ease-out 0s;}
+.g-head ul li.m-navitem { transition: all 0.4s ease-out 0s; padding: 0px 1px 0px 0px !important; line-height: 40px;font-size: 14px;float: left;position: relative;}
+.g-head ul li.m-navitem a { color:#4b4b4b;display: inline-block;padding: 20px 26px; }
+.g-head ul li.m-navitem a.active, .g-head ul li.m-navitem:hover a { cursor: pointer;color: #237aeb;text-decoration: none;}
+.g-head ul li.m-navitem a::after {content:'';display:block;margin-top: -3px;width:30%;height:2px;background:transparent;transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;}
+.g-head ul li.m-navitem a.active::after {width:60%;background: rgb(33, 124, 238);display: none;}
+.g-head ul li.m-navitem:hover a::after {width:100%;background: rgb(41, 127, 236);}
+.g-head ul li.m-navitem a.active::after{transition: all 0.3s ease 0s;}
+.g-head ul li.m-navitem a.active:after, .g-head ul li.m-navitem:hover a:after {display: block;}
+
+/*.g-body*/
+.g-body{overflow: auto;padding-top:80px}
+.g-body>div{margin:0 auto 10px auto;overflow: hidden;}
+.g-body>div:not(:first-child){display: none;}
+.g-foot{width:100%;height: 40px;line-height: 40px;background-color: #EFEFEF;color: #8e8e8e;font-size: 12px;position: relative;z-index: 3;}
+.top-bar{position: fixed;right:30px;bottom:70px;width:48px;height: 48px;background:url(../img/top.png) no-repeat;background-size: 100%;display: none;}
+.t-content{text-indent: 30px;}
+.t-header{width:100%;padding-bottom:26px;padding-top:70px;}
+.t-header .title{
+font-size: 30px;
+color: #444;
+margin-bottom: 10px;
+}
+.t-header .subtitle{
+font-family: HELVETICANEUELTPRO-THEX, "寰蒋闆呴粦";
+font-size: 19px;
+color: #c1c1c1;
+}
+.t-pic{overflow: hidden;margin:0 auto;}
+.t-pic>li,.t-prod>li{margin-bottom: 30px;}
+.t-pic>li img,.t-prod>li img{width:100%;height: auto;display: block;margin:0 auto}
+.t-prod{overflow: hidden;margin:30px auto}
+.t-subtitle-title{font-size: 20px;font-family: HELVETICANEUELTPRO-THEX, "寰蒋闆呴粦";}
+.t-subtitle{font-size: 16px;}
+.t-subtitle-title>span{width:14px;height: 14px;display: block;background: #8C8C8C;transform: rotate(45deg);float: left;margin:7px 10px}
+.t-subtitle .t-prod li img{max-height: 410px;}
+@media screen and (min-width:768px) and (max-width:991px){
+    .t-subtitle .t-prod li img{max-height: 900px;}
+}
+@media screen and (min-width:991px) and (max-width:1245px){
+    .t-subtitle .t-prod li img{max-height: 330px;}
+}
+.m-testFlow{width:100%;height: auto;}
+.m-strength .t-subtitle .t-prod.m-idea li img{height: auto;max-height: 810px;}
+/*banner*/
+.banner{width:110%;margin-left: -15px;height:200px;}
+.m-aboutUs-banner{background: url(../img/banner1.png) no-repeat;background-position: center;background-color: #E8EFFB;background-size: contain;}
+.m-strength-banner{background: url(../img/banner2.png) no-repeat;background-position: center;background-size: 78%;background-position-y: -80px;}
+.m-product-banner{background:url(../img/banner3.png) no-repeat;background-color: #517cc8;background-position: center;background-size: contain;}
+/*鑱旂郴鎴戜滑*/
+.m-contect-banner{width:110%;height: 200px;background: url(../img/23.jpg) no-repeat;margin-left:-15px}
+.contect-content p{height: 30px;line-height:40px;}
+.contect-content span.icon{display: block;width:30px;height: 30px;float: left;margin:5px 10px;}
+.contect-content span.icon.icon-phone{background:url(../img/phone.png) no-repeat;background-size: 100%;}
+.contect-content span.icon.icon-address{background:url(../img/address.png) no-repeat;background-size: 100%;}
+.contect-content span.icon.icon-contector{background:url(../img/contector.png) no-repeat;background-size: 100%;}
+.contect-content span.icon.icon-email{background:url(../img/email.png) no-repeat;background-size: 100%;}
+#container {width: 100%;height: 500px;margin: 0px;}
+.weChat{width:100px;height: 100px;margin:45px 30px;}
+.weChat>img{width:100%;height: 100%;display: block;}
+/*鍦板浘*/
+ .content-window-card {
+position: relative;
+box-shadow: none;
+bottom: 0;
+left: 0;
+width: auto;
+padding: 0;
+}
+.content-window-card p {
+height: 2rem;
+}
+.custom-info {
+border: solid 1px silver;
+}
+div.info-top {
+position: relative;
+background: none repeat scroll 0 0 #F9F9F9;
+border-bottom: 1px solid #CCC;
+border-radius: 5px 5px 0 0;
+}
+div.info-top div {
+display: inline-block;
+color: #333333;
+font-size: 14px;
+font-weight: bold;
+line-height: 31px;
+padding: 0 10px;
+}
+div.info-top img {
+position: absolute;
+top: 10px;
+right: 10px;
+transition-duration: 0.25s;
+}
+div.info-top img:hover {
+box-shadow: 0px 0px 5px #000;
+}
+div.info-middle {
+font-size: 12px;
+padding: 10px 6px;
+line-height: 20px;
+}
+div.info-bottom {
+height: 0px;
+width: 100%;
+clear: both;
+text-align: center;
+}
+div.info-bottom img {
+position: relative;
+z-index: 104;
+}
+.info-middle img {
+float: left;
+margin-right: 6px;
+}
+/*閫傞厤*/
+
+@media (min-width:991px){
+
+    .t-prod li:nth-child(3) img,.t-prod li:nth-child(4) img{
+        height: 542px;
+    }
+	.t-prod li:nth-child(5) img,.t-prod li:nth-child(6) img{
+		height: 690px
+	}    
+}
+@media screen and (max-width:991px){
+	.m-headContent{height:50px;}
+	.g-head ul li.m-navitem a{padding:10px 5px}
+	#logo{width:18%;left:-5px}
+	#logo img{width:100%;height: 47px;}
+	.g-body{padding-top: 50px;}
+	.banner{height:105px;/*background-size: cover;*/}
+	.m-strength-banner{height:105px;background-position-y: 0;}
+	.m-contect-banner{background-position: center;background-size:cover ;height:105px;}
+	.t-header{padding-top:30px;}
+}
+@media screen and (max-width:768px){
+	#logo img{width:120px;}
+	#logo{width: auto;}
+	.companyName{margin-top:0}
+}
+@media screen and (max-width:450px){
+	#logo{width: 18%;}
+	#logo img{width:100%;}
+}
+@media screen and (max-width:360px){
+	.m-navitem a{font-size: 10px;}
+	#logo{width:13%;left:-5px}
+}

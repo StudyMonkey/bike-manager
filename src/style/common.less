@@ -1,0 +1,37 @@
+@import './default.less';
+@import './loading.less';
+
+ul,li{
+    list-style: none
+}
+
+.clearfix{
+    &::after{
+        content: "";
+        clear: both;
+        display: block;
+        visibility: hidden;
+    }
+}
+
+.container {
+    display: flex;
+    .nav-left {
+        width: 15%;
+        min-width: 180px;
+        height: calc(100vh);
+        color: @colorM;
+        background-color: @colorR;
+    }
+    .main {
+        flex: 1;
+        min-width: 756px;
+        height: calc(100vh);
+        background-color: @colorL;
+        overflow: auto;
+    }
+    .content {
+        position: relative;
+        padding: 20px;
+    }
+}
